@@ -15,8 +15,31 @@
     - 送信する文字列
     
 - プログラム間の通信は、以下UNIXのシグナルのみを使用。
-   - SIGUSR1
+  - SIGUSR1
   - SIGUSR2
+
+## 実行
+- ビルド
+```
+$ git clone https://github.com/RIshimoto/minitalk
+$ cd minitalk
+$ make
+```
+
+- サーバー
+```
+$ ./server
+(PID)
+```
+
+- クライアント
+```
+（サーバー起動後）
+$ ./client (serverのPID) (送りたい文字列)
+```
+
+## デモ
+https://user-images.githubusercontent.com/57135683/213507453-796f696b-bd9e-4824-a65c-4e1493735934.mp4
 
 ## 使用関数
 write, signal, sigemptyset, sigaddset, sigaction, kill, getpid, malloc, free, pause, sleep, usleep, exit
