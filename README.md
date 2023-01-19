@@ -1,6 +1,8 @@
 # minitalk
 ## 概要
-42Tokyoの課題の一つ。クライアントとサーバーの形でシグナル通信を行う。
+42Tokyo[^1]の課題の一つ。クライアントとサーバーの形でシグナル通信を行う。
+
+[^1]:https://42tokyo.jp/
 
 ## 詳細
 - **サーバー**
@@ -41,5 +43,5 @@ $ ./client (serverのPID) (送りたい文字列)
 ## デモ
 https://user-images.githubusercontent.com/57135683/213507453-796f696b-bd9e-4824-a65c-4e1493735934.mp4
 
-## 使用関数
+## 使用したライブラリ関数
 write, signal, sigemptyset, sigaddset, sigaction, kill, getpid, malloc, free, pause, sleep, usleep, exit
